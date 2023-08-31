@@ -15,16 +15,51 @@
 
         <div class="links">
             <ul class="nav-items">
-                <li>IPL</li>
-                <li>Finance</li>
-                <li>News</li>
+                <li id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                <li id="finance"onclick="onNavItemClick('finance')">Finance</li>
+                <li id="Politics"onclick="onNavItemClick('Politics')">Politics</li>
             </ul>
         </div>
         <div class="search-box">
-            <input type="text" class="news-input" placeholder="e.g.news">
+            <input type="text" class="news-input" placeholder=" e.g.news">
             <button class="search-button">Search</button>
         </div>
     </nav>
+    <main>
+        <div class="card-container">
+            <!-- all the contents of card -->
+            <!-- <div class="card">
+                <div class="card-header">
+                    <img src="pic.png" alt="" id="newsimage">
+                </div>
+                <div class="card-content">
+                    <h2 id="news-title">This is the Title</h2>
+                    <h6 class="News-source">End Gadget 26/08/2023</h6>
+                    <p class="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam eius ipsam ducimus neque consectetur sequi sunt? Fugit incidunt labore aliquid! Ad itaque dicta deleniti consequatur placeat officia facilis eum.</p>
     
+                </div>
+
+            </div> -->
+            
+            
+        </div>
+    </main>
+    <template id="template-news">
+        <div class="card">
+            <div class="card-header">
+                <img src="pic.png" alt="" id="newsimage">
+            </div>
+            <div class="card-content">
+                <h2 id="news-title">This is the Title</h2>
+                <h6 class="News-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam eius ipsam ducimus neque consectetur sequi sunt? Fugit incidunt labore aliquid! Ad itaque dicta deleniti consequatur placeat officia facilis eum.</p>
+
+            </div>
+
+        </div>
+    </template>
+    
+
 </body>
+<script src="index.js"></script>
 </html>
